@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="wrapper">
+    <div class="picture">
+        <img src="https://images.unsplash.com/photo-1518928286447-dc161b7cd6fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fHBpbmclMjBwb25nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" alt="image of ping-pong bats and ball">
+    </div>
+
+    <div class="title">
+        <p>Ping Pong Score Keeper</p>
+    </div>
+
+    <section>
+        <div class="players">
+            <h2>PLAYER ONE</h2>
+            <h2>PLAYER TWO</h2>
+        </div>
+        
+        <h1><span class="player-one-score">0</span> - <span class="player-two-score">0</span></h1>
+        
+        <div class="marking">
+            <label for="win-score">Point Mark:</label>
+            <select name="win-score" id="win-score">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+            </select>
+        </div>
+
+        <!-- <p>Use the buttons below to record the score</p> -->
+    </section>
+
+    <div class="actions">
+        <button class="btn1">+1 PLAYER ONE</button>
+        <button class="btn2">+1 PLAYER TWO</button>
+        <button class="reset">RESET</button>
+    </div>
+   </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

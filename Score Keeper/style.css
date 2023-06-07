@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+}
+
+:root{
+    --light: rgb(249, 247, 247);
+    --green: rgb(31, 171, 137);
+    --red: rgb(255, 30, 30);
+    --yellow: rgb(255, 255, 0);
+    --dark: rgb(34, 40, 49);
+    --lightblue: rgb(73, 85, 121);
+    --darkblue: rgb(38, 49, 89);
+}
+body{
+    display: grid;
+    place-items: center;
+    background-color: var(--lightblue);
+    color: var(--light);
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border: 1px solid #ffffff10;
+}
+
+.picture img{
+    height: auto;
+    width: 100%;
+}
+
+.title p{
+    border-bottom: 2px solid #ffffff10;
+    padding: 1rem .5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.players{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.players h2,
+.marking{
+    border: 2px solid #ffffff10;
+    padding: .5rem 2rem;
+    width: 100%;
+}
+
+.player-one-score{
+    margin-inline-end: 5rem;
+}
+
+.player-two-score{
+    margin-inline-start: 5rem;
+}
+
+section h1{
+   font-size: 5rem; 
+   text-align: center;
+   border: 2px solid #ffffff10;
+    padding: .5rem 2rem;
+    width: 100%;
+}
+
+.actions{
+    width: 100%;
+    display: flex;
+    gap: 0.2rem;
+}
+
+button{
+    padding: 0.7rem 1.5rem;
+    appearance: none;
+    outline: none;
+    border: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 800;
+    font-size: 0.8rem;
+    color: var(--light);
+    background-color: var(--darkblue);
+    transition: 300ms all ease-in-out;
+}
+
+button:hover{
+    filter: brightness(95%);
+}
+
+.btn1{
+    background-color: var(--green);
+}
+
+.btn2{
+    background-color: #3F72AF;
+}
+
+.reset{
+    background-color: var(--red);
+}
+
+
+.winner{
+    color: var(--green);
+}
+
+.loser{
+    color: var(--red);
+}
+
+.btn1:disabled,
+.btn2:disabled{
+    filter: brightness(20%);
+}
+
+#win-score{
+    width: 4rem;
+    margin-inline-start: 0.5rem;
+    padding: 0.3rem 0.7rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+@media (min-width: 320px) and (max-width: 574px) and (orientation:portrait){
+    .wrapper{
+        width: 100%;
+    }
+
+    button{
+        font-size: 0.7rem;
+        padding: 0.7rem 0.3rem;
+    }
+}
+
+@media  (min-width: 575px) and (max-width: 960px){
+    .wrapper{
+        width: 80%;
+    }
+
+    button{
+        font-size: small;
+        padding: 0.7rem 1rem;
+    }
+}    
+
+@media (min-width:961px) and (max-width:1095px){
+    .wrapper{
+        width: 50%;
+    }
+
+    button{
+        font-size: small;
+        padding: 0.7rem 0.5rem;
+    }
+}
